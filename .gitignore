@@ -1,6 +1,5 @@
- .idea
- db
- _tmp
- node_modules
- jarvis-v1.5
-
+.idea
+db
+_tmp
+node_modules
+jarvis-v1.5
