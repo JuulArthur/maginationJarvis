@@ -8,4 +8,6 @@ module.exports = (function (app, express, models) {
     router.get('/', (function (res, req) {
         req.send('api');
     }));
+
+    require('./user')(router,models);
 });
