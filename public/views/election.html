@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+    <p>{{election}}</p>
+    <h2>Title: {{election.title}}</h2>
+    <p>Description: {{election.description}}</p>
+    <ul>
+        <li ng-repeat="alternative in election.alternatives">
+            <p>{{alternative}}</p>
+        </li>
+    </ul>
+</div>
