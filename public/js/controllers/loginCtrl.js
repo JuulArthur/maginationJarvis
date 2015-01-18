@@ -1,5 +1,5 @@
 "use strict";
-angular.module('loginCtrl', []).controller('loginController', (function ($scope, $http) {
+angular.module('voteApp').controller('loginController', function ($scope, $http) {
 
     $scope.login = (function () {
         $http({
@@ -15,4 +15,4 @@ angular.module('loginCtrl', []).controller('loginController', (function ($scope,
             $scope.tagline = "nope";
         }));
     });
-}));
+});

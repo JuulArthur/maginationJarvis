@@ -1,5 +1,5 @@
 "use strict";
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', (function ($routeProvider) {
+angular.module('voteApp').config(['$routeProvider', '$locationProvider', (function ($routeProvider) {
 
     $routeProvider.when('/', {
         templateUrl: 'views/home.html',

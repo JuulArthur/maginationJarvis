@@ -26,4 +26,21 @@ angular.module('voteApp').service('userService', function ($http) {
         });
         return promise;
     };
+
+    this.createUser = function (username, password, email) {
+        var promise = $http({
+            method: 'POST',
+            data: {
+                username: username,
+                password: password,
+                email: email
+            },
+            url: '/api/user'
+        }).success(function (data, status, headers, config) {
+            return data;
+        }).error(function (data, status, headers, config) {
+            return data;
+        });
+        return promise;
+    }
 });

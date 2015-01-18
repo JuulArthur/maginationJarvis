@@ -1,2 +1,2 @@
 "use strict";
-var app = angular.module('voteApp', ['ngRoute', 'appRoutes', 'mainCtrl', 'loginCtrl']);
+var app = angular.module('voteApp', ['ngRoute']);
