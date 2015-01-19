@@ -1,5 +1,5 @@
 "use strict";
-angular.module('voteApp').service('userService', function ($http) {
+angular.module('maginationApp').service('userService', function ($http) {
 
     this.isAuthenticated = function () {
         return $http({

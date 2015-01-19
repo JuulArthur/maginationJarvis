@@ -1,15 +1,15 @@
 {
-  "name": "ads",
+  "name": "magination",
   "version": "1.0.0",
-  "description": "Abakus Decision System",
+  "description": "Magination website",
   "main": "app.js",
   "scripts": {
     "test": "gulp test"
   },
-  "author": "Tib&Juul",
+  "author": "The Magination Crew",
   "repository": {
     "type": "git",
-    "url": "git@github.com:webkom/ads.git"
+    "url": "git@github.com:juularthur/maginationJarvis.git"
   },
   "license": "ISC",
   "dependencies": {

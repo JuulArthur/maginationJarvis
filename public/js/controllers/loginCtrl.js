@@ -1,5 +1,5 @@
 "use strict";
-angular.module('voteApp').controller('loginController', function ($scope, $http) {
+angular.module('maginationApp').controller('loginController', function ($scope, $http) {
 
     $scope.login = (function () {
         $http({

@@ -1,5 +1,5 @@
 "use strict";
-angular.module('voteApp').controller('mainController', function ($scope, userService) {
+angular.module('maginationApp').controller('mainController', function ($scope, userService) {
     $scope.success = false;
     $scope.error = false;
 
