@@ -23,10 +23,10 @@ function rnr_shortcodes() {
 	/* Alert Messages */
 	/* ------------------------------------------------------------------------ */
 	
-	jQuery(".alert-message .close").live('click',function(){
+	/* jQuery(".alert-message .close").live('click',function(){
 		jQuery(this).parent().animate({'opacity' : '0'}, 300).slideUp(300);
 		return false;
-	});
+	}); */
 	
 	/* ------------------------------------------------------------------------ */
 	/* Skillbar */

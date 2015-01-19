@@ -52,7 +52,7 @@
     
 </head>
 
-<body ng-app="voteApp" ng-controller="mainController" class="onepage" data-spy="scroll" data-target=".navigation">
+<body ng-app="maginationApp" ng-controller="mainController" class="onepage" data-spy="scroll" data-target=".navigation">
  <div id="load"></div>
  
 
@@ -77,13 +77,13 @@
                </div>
 
                <form class="userform" id="newsletterform">
-                   <div class="sixteen columns alert-message success" ng-show="success">User created<span class="close" href="#">x</span></div> <br>
-                   <div class="sixteen columns alert-message error" ng-show="error">Validation failed<span class="close" href="#">x</span></div> <br>
-                   <input type="text" class="input-field" placeholder="Enter your name" ng-model="user.username" />
-                   <input type="email" class="input-field" placeholder="Enter your email" ng-model="user.email" />
-                   <input type="password" class="input-field" placeholder="Enter your password" ng-model="user.password" />
-                   <!--<button type="submit" class="btn btn-default" value="Save" ng-click="submit(user)"> Create user </button>-->
-                   <a id="button-newsletter" class="button" href="#" title="Subscribe now" ng-click="submit(user)">Subscribe now</a>
+                   <div class="sixteen columns alert-message success" ng-show="success">User created<span class="close" href="#" ng-click="setSuccessFalse(user)">x</span></div> <br>
+                   <div class="sixteen columns alert-message error" ng-show="error">{{message}}<span class="close" href="#" ng-click="setErrorFalse(user)">x</span></div> <br>
+                   <input type="text" class="input-field" placeholder="Enter your name" ng-model="user.username" required/>
+                   <input type="email" name="email" class="input-field" placeholder="Enter your email" ng-model="user.email" required/>
+                   <input type="password" class="input-field" placeholder="Enter your password" ng-model="user.password" required/>
+                   <a id="button-newsletter" class="button" href="" title="Subscribe now" ng-click="submit(user)">Subscribe now</a>
+                   <br>
                </form>
 
   
