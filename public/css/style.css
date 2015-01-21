@@ -575,7 +575,7 @@ nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
 /* PARALLAX SECTION 1
 --------------------------------------------------------*/
 .bg1 {
-	background-image: url(../images/parallax/parallax1.jpg);
+	background-image: url(../images/parallax/parallaxBIG.jpg);
 }
 p.quote {
 	font-family: 'BebasNeueRegular', sans-serif;
@@ -614,7 +614,7 @@ p.quote {
 --------------------------------------------------------*/
 	
 .bg2 {
-	background-image: url(../images/parallax/parallax2.jpg);
+	background-image: url(../images/parallax/parallaxBIG.jpg);
 }
 .twitter-slider {
 	width: 85%;
@@ -682,7 +682,7 @@ p.quote {
 --------------------------------------------------------*/
 
 .bg3 {
-	background-image: url(../images/parallax/parallax3.jpg);
+	background-image: url(../images/parallax/parallaxBIG.jpg);
 }
 .testimonial-slider {
 	position: relative;
@@ -730,7 +730,7 @@ p.quote {
 --------------------------------------------------------*/
 
 .bg4 {
-	background-image: url(../images/parallax/parallax4.jpg);
+	background-image: url(../images/parallax/parallaxBIG.jpg);
 }
 /*--------------------------------------------------------
 /* COLOR BLOCK SECTION
@@ -838,7 +838,7 @@ p.quote {
 	background: radial-gradient(center center, circle cover, #FFD600 0%, #E2BE01 100%);
 }
 .home-parallax {
-	background: url(../images/parallax/parallax4.jpg) fixed;
+	background: url(../images/parallax/parallax1.jpg) fixed;
 	background-size: cover;
 	background-position: center top;
 	background-color: #FFD600;
@@ -1769,7 +1769,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: #515A5F url(../images/backtotop.png) no-repeat center center;
+	background: rgba(256, 256, 256, .6) url(../images/backtotop.png) no-repeat center center;
 	text-indent: -9999px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -1780,7 +1780,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	transition: 0.2s all linear;
 }
 #back-to-top a:hover {
-	background-color: #222222;
+	background-color: rgba(256, 256, 256, .9);
 }
 
 /* ------------------------------------------------------------------------ */
