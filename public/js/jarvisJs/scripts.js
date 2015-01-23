@@ -243,6 +243,7 @@ $(function() {
 		function setProjects() { 
 			setColumns();
 			container.isotope('reLayout');
+			
 		}		
 		
 		container.imagesLoaded(function () { 
@@ -429,7 +430,8 @@ function initializePortfolio() {
 		/* ADD ACTIVE CLASS TO CURRENTLY CLICKED PROJECT */
 		 portfolioGrid.find('div.portfolio-item .portfolio a[href="#!' + url + '"]' ).parent().parent().addClass( 'current' );
 		 portfolioGrid.find('div.portfolio-item.current').find('.portfolio').addClass('active');
-		
+
+
 
 	
   }
@@ -624,9 +626,8 @@ function initializePortfolio() {
 $(document).ready(function() 
 { 
   init(); 
-  initializePortfolio();  
+  initializePortfolio();
   rnr_shortcodes();
-   
 
 /* ------------------------------------------------------------------------ */
 /* BACK TO TOP 
@@ -845,8 +846,11 @@ $(window).load(function(){
 		nested: true,
 		indent: '-'
 	}); 
-	
-	
+
+/* ------------------------------------------------------------------------ */
+/* PORTFOLIO - FILTER START */
+/* ------------------------------------------------------------------------ */ 
+	document.getElementById('portfolio-start-filter').click();
  
 });
 // END OF WINDOW.LOAD FUNCTION
