@@ -575,7 +575,7 @@ nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
 /* PARALLAX SECTION 1
 --------------------------------------------------------*/
 .bg1 {
-	background-image: url(../images/parallax/parallaxBIG.jpg);
+	background-image: url(../images/parallax/parallax1.jpg);
 }
 p.quote {
 	font-family: 'BebasNeueRegular', sans-serif;
@@ -595,7 +595,7 @@ p.quote {
 	margin: 0 5px;
 }
 .parallax .quote i {
-	color: #FFD600;
+	color: #FFFFFF !important;
 }
 .quote-author {
 	height: 24px;
@@ -614,7 +614,7 @@ p.quote {
 --------------------------------------------------------*/
 	
 .bg2 {
-	background-image: url(../images/parallax/parallaxBIG.jpg);
+	background-image: url(../images/parallax/parallax1.jpg);
 }
 .twitter-slider {
 	width: 85%;
@@ -762,7 +762,7 @@ p.quote {
 	text-align: center;
 }
 .color-block a, .color-block .quote i, .color-block .quote-author, .color-block .twitter-date a, .color-block .twitter-author a, .color-block .testimonial-slider .title span, .color-block .client-info {
-	color: #000000;
+	color: #ffffff;
 }
 /*--------------------------------------------------------
 /* PAGE SECTIONS
