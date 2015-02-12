@@ -614,7 +614,7 @@ p.quote {
 --------------------------------------------------------*/
 	
 .bg2 {
-	background-image: url(../images/parallax/parallax1.jpg);
+	background-image: url(../images/parallax/parallax3.jpg);
 }
 .twitter-slider {
 	width: 85%;
@@ -682,7 +682,7 @@ p.quote {
 --------------------------------------------------------*/
 
 .bg3 {
-	background-image: url(../images/parallax/parallaxBIG.jpg);
+	background-image: url(../images/parallax/parallax4.jpg);
 }
 .testimonial-slider {
 	position: relative;
@@ -730,7 +730,7 @@ p.quote {
 --------------------------------------------------------*/
 
 .bg4 {
-	background-image: url(../images/parallax/parallaxBIG.jpg);
+	background-image: url(../images/parallax/parallax1.jpg);
 }
 /*--------------------------------------------------------
 /* COLOR BLOCK SECTION
@@ -838,7 +838,7 @@ p.quote {
 	background: radial-gradient(center center, circle cover, #FFD600 0%, #E2BE01 100%);
 }
 .home-parallax {
-	background: url(../images/parallax/parallax1.jpg) fixed;
+	background: url(../images/parallax/parallax2.jpg) fixed;
 	background-size: cover;
 	background-position: center top;
 	background-color: #FFD600;
