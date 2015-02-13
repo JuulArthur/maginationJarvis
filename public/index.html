@@ -75,19 +75,19 @@
                 <h1>
                 <span class="slabtext highlight" style="color:white">Pure creativity</span>
                 </h1>
-                <h3>Ready to experience the feeling of no chains at all?</h3>
+                <h3>Subscribe and preorder your username now!</h3>
                </div>
 
                <form class="userform" id="newsletterform">
-                   <div class="sixteen columns alert-message success" ng-show="success">User created<span class="close" href="#" ng-click="setSuccessFalse(user)">x</span></div> <br>
-                   <div class="sixteen columns alert-message error" ng-show="error">{{message}}<span class="close" href="#" ng-click="setErrorFalse(user)">x</span></div> <br>
-                   <input type="text" class="input-field" placeholder="Enter your name" ng-model="user.username" required/>
-                   <input type="email" name="email" class="input-field" placeholder="Enter your email" ng-model="user.email" required/>
-                   <input type="password" class="input-field" placeholder="Enter your password" ng-model="user.password" required/>
-                   <a id="button-newsletter" class="button" href="" title="Subscribe now" ng-click="submit(user)">Subscribe now</a>
-                   <br>
+                   <div class="eight columns"><input type="text" class="input-field" placeholder="Desired username" ng-model="user.username" required/></div>
+                   <div class="eight columns"><input type="email" name="email" class="input-field" placeholder="Enter your email" ng-model="user.email" required/></div>
+                   <!--<input type="password" class="input-field" placeholder="Enter your password" ng-model="user.password" required/>-->
+                   <div class="sixteen columns"><a id="button-newsletter" class="button" href="" title="Subscribe now" ng-click="submit(user)">Subscribe now</a></div>
+                    <div style="padding-top:10px">
+                     <div class="sixteen columns alert-message success" ng-show="success">User created<span class="close" href="#" ng-click="setSuccessFalse(user)">x</span></div>
+                     <div class="sixteen columns alert-message error" ng-show="error">{{message}}<span class="close" href="#" ng-click="setErrorFalse(user)">x</span></div>
+                    </div>
                </form>
-
   
               <!--<form method="post" action="subscribe.php" id="newsletterform" data-mailchimp="true">
                 <div>
@@ -120,7 +120,7 @@
                   <li><a href="#home">Home</a></li>                
                   <li><a href="#about">About</a></li>
                   <li><a href="#team">Team</a></li>
-                  <li><a href="#portfolio">Showreel</a></li>
+                  <li><a href="#portfolio">Showroom</a></li>
                   <li><a href="#contact">Contact</a></li>  
                   <li><a href=""></a></li>                
                   <li><a href="blog.html">Blog</a></li>                  
@@ -168,7 +168,7 @@
                     <img src="images/icons/icons/innovativ.png" alt="Service Features">
                   </div>  
                     <h3>Innovative</h3>                
-                    <p>Pioneers the way of board games today.</p>
+                    <p>Pioneers the way of board games today, combining magnets and imagination.</p>
                   </div>               
                 </div><!-- END ONE THIRD COLUMN -->
                 
@@ -179,7 +179,7 @@
                   </div>                   
 
                     <h3>Multifunctional</h3>                
-                    <p> Pellentesquemattis arcu malesuada in. Donec urna sem, rutrum sit amet pellentesque vel, suscipit at metus.</p>
+                    <p>Change the rules after your liking, just like a deck of cards.</p>
                   </div>               
                
                 </div><!-- END ONE THIRD COLUMNS -->   
@@ -190,7 +190,7 @@
                     <img src="images/icons/icons/open.png" alt="Service Features">
                   </div>
                     <h3>Open</h3>                
-                    <p> Anyone will be able to be a part of the development of the game.</p>
+                    <p>You can be a part of the development of game rules, pieces and colors!</p>
                   </div>               
                 
                 </div><!-- END ONE THIRD COLUMNS -->                 
@@ -365,6 +365,11 @@
         <div class="bg3 parallax-bg"></div><!-- END PARALLAX BACKGROUND -->
         <div class="overlay"></div> <!--END PATTERN OVERLAY -->
         <div class="container clearfix">
+                <div class="color-block-content">
+                  
+                  <a href="https://www.facebook.com/maginationgame" target="_blank"><div class="parallax-icon facebook-icon"></div></a>
+                   <p class="twitter-author"><a href="https://www.facebook.com/maginationgame" target="_blank">/maginationgame</a></p>
+                </div><!-- END PARALLAX CONTENT -->
             </div><!-- END CONTAINER -->
      </div>
     <!-- END PARALLAX SECTION --> 
@@ -378,9 +383,9 @@
       <div class="sixteen columns">            
               <!-- START TITLE -->              
         <div class="title">
-          <h1>Showreel</h1>
+          <h1>Showroom</h1>
                   <div class="subtitle">
-                      <p>Hire us if you like what we do because we helps Agencies to link <span class="highlight">Business</span> processes and <span class="highlight">People.</span></p>
+                      <p>Have a look at what we've done so far.</p>
                   </div><!-- END SUBTITLE -->                  
                 </div><!-- END TITLE -->                               
       </div><!-- END SIXTEEN COLUMNS -->  
@@ -433,10 +438,11 @@
    <div  id="filters" class="sixteen columns">
 
       <ul class="clearfix">
-        <li><a href="#" data-filter="*" class="active"><h3>All</h3></a></li>  
-        <li><a href="#" data-filter=".branding" id="portfolio-start-filter"><h3>Branding</h3></a></li>
-        <li><a href="#" data-filter=".design" ><h3>Design</h3></a></li>
-        <li><a href="#" data-filter=".photography"><h3>Photography</h3></a></li>
+        <!--<li><a href="#" data-filter="*" class="active"><h3>All</h3></a></li>-->
+        <li><a href="#" data-filter=".pieces" id="portfolio-start-filter"><h3>Pieces</h3></a></li>
+        <li><a href="#" data-filter=".games" ><h3>Games</h3></a></li>
+        <li><a href="#" data-filter=".prototypes" ><h3>Prototypes</h3></a></li>
+        <li><a href="#" data-filter=".outthere" ><h3>Out there</h3></a></li>
       </ul>
     </div><!-- END PORTFOLIO FILTERING -->    
    </div><!-- END CONTAINER --> 
@@ -445,294 +451,134 @@
    <!-- START PORTFOLIO WRAP -->  
    <div id="portfolio-wrap">
     
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column photography">
+   <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column pieces">
            <div class="portfolio">
               <a href="#!projects/project-1.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio1.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->   
+                <img src="images/portfolio/portfolio6.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->   
                 
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Featured Image</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Photography, Videography</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
               
               </a>
            </div>
     </div>
-    <!-- END PORTFOLIO ITEM -->    
-    
-                   
+    <!-- END PORTFOLIO ITEM -->
+               
     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column photography">
+    <div class="portfolio-item one-third column pieces">
            <div class="portfolio">
               <a href="#!projects/project-2.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio2.jpg" alt="Portfolio 2"/><!-- END PORTFOLIO IMAGE -->   
+                <img src="images/portfolio/portfolio7.jpg" alt="Portfolio 2"/><!-- END PORTFOLIO IMAGE -->   
                 
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Vimeo Video</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Videography, Branding</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-film"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
               
               </a>
            </div>
     </div>
-    <!-- END PORTFOLIO ITEM -->  
-               
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column photography">
+    <!-- END PORTFOLIO ITEM -->
+              
+     <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column pieces">
            <div class="portfolio">
               <a href="#!projects/project-3.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio3.jpg" alt="Portfolio 3"/><!-- END PORTFOLIO IMAGE -->   
+                <img src="images/portfolio/portfolio8.jpg" alt="Portfolio 3"/><!-- END PORTFOLIO IMAGE -->   
                 
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Gallery</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Photography, Branding</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
               
               </a>
            </div>
     </div>
     <!-- END PORTFOLIO ITEM -->
-                
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column photography">
+              
+     <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column pieces">
            <div class="portfolio">
               <a href="#!projects/project-4.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio4.jpg" alt="Portfolio 4"/><!-- END PORTFOLIO IMAGE -->   
+                <img src="images/portfolio/portfolio9.jpg" alt="Portfolio 4"/><!-- END PORTFOLIO IMAGE -->   
                 
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Another Gallery</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Photography, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
               
               </a>
            </div>
     </div>
     <!-- END PORTFOLIO ITEM -->
               
-              
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column photography">
+     <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column pieces">
            <div class="portfolio">
               <a href="#!projects/project-5.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio5.jpg" alt="Portfolio 5"/><!-- END PORTFOLIO IMAGE -->   
+                <img src="images/portfolio/portfolio10.jpg" alt="Portfolio 5"/><!-- END PORTFOLIO IMAGE -->   
                 
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Vimeo Video</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Videography, Design</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-film"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-              
-              
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column branding">
-           <div class="portfolio">
-              <a href="#!projects/project-6.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio6.jpg" alt="Portfolio 6"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Youtube Video</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Videography, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-film"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-               
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column branding">
-           <div class="portfolio">
-              <a href="#!projects/project-7.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio7.jpg" alt="Portfolio 7"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Youtube Video</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-              
-     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column branding">
-           <div class="portfolio">
-              <a href="#!projects/project-8.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio8.jpg" alt="Portfolio 8"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Youtube Video</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-              
-     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column branding">
-           <div class="portfolio">
-              <a href="#!projects/project-9.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio9.jpg" alt="Portfolio 9"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Portfolio 9</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-              
-     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column branding">
-           <div class="portfolio">
-              <a href="#!projects/project-10.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio10.jpg" alt="Portfolio 10"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Portfolio 10</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-    
-    
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column design">
-           <div class="portfolio">
-              <a href="#!projects/project-11.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio11.jpg" alt="Portfolio 11"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Portfolio 11</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Videography, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-film"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-               
-    <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column  design">
-           <div class="portfolio">
-              <a href="#!projects/project-12.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio12.jpg" alt="Portfolio 12"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Portfolio 12</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-              
-     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column design">
-           <div class="portfolio">
-              <a href="#!projects/project-13.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio13.jpg" alt="Portfolio 13"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Portfolio 13</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-              
-     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column design">
-           <div class="portfolio">
-              <a href="#!projects/project-14.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio14.jpg" alt="Portfolio 14"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Portfolio 14</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
-              
-              </a>
-           </div>
-    </div>
-    <!-- END PORTFOLIO ITEM -->
-              
-     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column design">
-           <div class="portfolio">
-              <a href="#!projects/project-15.html" class="portfolio-image">
-                <img src="images/portfolio/portfolio15.jpg" alt="Portfolio 15"/><!-- END PORTFOLIO IMAGE -->   
-                
-                <div class="portfolio-overlay">                
-                    <div class="thumb-info">                
-                      <h3>Portfolio 15</h3><!-- OVERLAY TITLE -->  
-                      <p class="portfolio-tags">Design, Web</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
-                    </div>                
-                </div><!-- END PORTFOLIO OVERLAY --> 
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
               
               </a>
            </div>
     </div>
     <!-- END PORTFOLIO ITEM -->    
+   <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column games">
+           <div class="portfolio">
+              <a href="#!projects/project-6.html" class="portfolio-image">
+                <img src="images/portfolio/portfolio10.jpg" alt="Portfolio 6"/><!-- END PORTFOLIO IMAGE -->   
+                
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
+              
+              </a>
+           </div>
+    </div>
+    <!-- END PORTFOLIO ITEM -->
+               
+    <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column games">
+           <div class="portfolio">
+              <a href="#!projects/project-7.html" class="portfolio-image">
+                <img src="images/portfolio/portfolio8.jpg" alt="Portfolio 7"/><!-- END PORTFOLIO IMAGE -->   
+                
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
+              
+              </a>
+           </div>
+    </div>
+    <!-- END PORTFOLIO ITEM -->
+              
+     <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column games">
+           <div class="portfolio">
+              <a href="#!projects/project-8.html" class="portfolio-image">
+                <img src="images/portfolio/portfolio9.jpg" alt="Portfolio 8"/><!-- END PORTFOLIO IMAGE -->   
+                
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
+              
+              </a>
+           </div>
+    </div>
+    <!-- END PORTFOLIO ITEM -->
+              
+     <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column games">
+           <div class="portfolio">
+              <a href="#!projects/project-7.html" class="portfolio-image">
+                <img src="images/portfolio/portfolio9.jpg" alt="Portfolio 9"/><!-- END PORTFOLIO IMAGE -->   
+                
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
+              
+              </a>
+           </div>
+    </div>
+    <!-- END PORTFOLIO ITEM -->
+              
+     <!-- START PORTFOLIO ITEM -->                   
+    <div class="portfolio-item one-third column games">
+           <div class="portfolio">
+              <a href="#!projects/project-10.html" class="portfolio-image">
+                <img src="images/portfolio/portfolio6.jpg" alt="Portfolio 10"/><!-- END PORTFOLIO IMAGE -->   
+                
+                <div class="portfolio-overlay"></div><!-- END PORTFOLIO OVERLAY --> 
+              
+              </a>
+           </div>
+    </div>
+    <!-- END PORTFOLIO ITEM -->
                 
    </div>
    <!-- END PORTFOLIO WRAPPER -->
@@ -764,14 +610,14 @@
                </div><!-- END FOUR COLUMNS --> 
                
                <div class="four columns">
-                 <div class="milestone-counter" data-perc="5">
+                 <div class="milestone-counter" data-perc="18">
                    <span class="milestone-count highlight"></span>
                    <h6 class="milestone-details">Beta testers</h6>
                  </div>
                </div><!-- END FOUR COLUMNS --> 
                
                <div class="four columns">
-                 <div class="milestone-counter" data-perc="13">
+                 <div class="milestone-counter" data-perc="27">
                    <span class="milestone-count highlight"></span>
                    <h6 class="milestone-details">games created</h6>
                  </div>
@@ -787,9 +633,7 @@
         <div class="container clearfix">
                 <div class="color-block-content">
                   
-                  <p class="twitter-feed-icon">
-                    <a href="http://twitter.com/maginationgame" target="_blank"><i class="icon-twitter"></i> </a>
-                  </p> 
+                  <a href="http://twitter.com/maginationgame" target="_blank"><div class="parallax-icon twitter-icon"></div></a>
                    <p  style="padding-top:10px" class="twitter-author"><a href="http://twitter.com/maginationgame" target="_blank">@maginationgame</a></p>
                 </div><!-- END PARALLAX CONTENT -->
             </div><!-- END CONTAINER -->
@@ -809,7 +653,7 @@
 				<div class="title">
 				  <h1>Contact Us</h1>
                   <div class="subtitle">
-                      <p>We'd really love to <span class="highlight">hear from you</span> so why not drop us an email and <span class="highlight">we'll get back</span> to you as soon as we can.</p>
+                      <p>Have an idea for a new game or just want to chat? We'd <span class="highlight">love</span> to hear from you!</p>
                   </div><!-- END SUBTITLE -->
                 </div><!-- END TITLE -->  	                           
 			</div><!-- END SIXTEEN COLUMNS -->  
