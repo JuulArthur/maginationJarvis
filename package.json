@@ -33,6 +33,7 @@
     "supertest": "^0.14.0"
   },
   "devDependencies": {
+    "gulp-jscs": "^1.4.0",
     "gulp-mocha": "^1.1.0",
     "mockgoose": "^1.10.7"
   }

@@ -1,5 +1,5 @@
 "use strict";
-angular.module('maginationApp').config(['$routeProvider', '$locationProvider', (function ($routeProvider) {
+angular.module('maginationApp').config(['$routeProvider', '$locationProvider', (function ($routeProvider, $locationProvider) {
 
     $routeProvider.when('/', {
         templateUrl: 'views/home.html',
@@ -11,4 +11,6 @@ angular.module('maginationApp').config(['$routeProvider', '$locationProvider', (
         templateUrl: 'views/home.html',
         controller: 'mainController'
     });
+
+    $locationProvider.html5Mode(true);
 })]);

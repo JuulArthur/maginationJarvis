@@ -2,6 +2,7 @@ var gulp        = require('gulp');
 var server      = require('gulp-express');
 var runSequence = require('run-sequence');
 var mocha       = require('gulp-mocha');
+var jscs = require('gulp-jscs');
 
 
 var srcDir = [
@@ -35,4 +36,7 @@ gulp.task('test', function () {
         }));
 });
 
-gulp.task('default', ['watch', 'server']);
+gulp.task('jscs', function () {
+    return gulp.src('app,js')
+        .pipe(jscs());
+});

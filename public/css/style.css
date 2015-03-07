@@ -1108,8 +1108,6 @@ p.quote {
 	padding: 0;
 }
 .portfolio-item.current {
-	box-shadow: 0 0px 0px 10px rgba(255, 255, 255, 0.37);
-	z-index: 101;
 }
 .portfolio-item {
 	padding: 0;

@@ -17,20 +17,20 @@ angular.module('maginationApp').controller('mainController', function ($scope, u
                 $scope.error = true;
                 $scope.message = "invalid email address";
                 return;
-            } else if (user.password === undefined || user.password.length < 6) {
-                $scope.error = true;
-                $scope.message = "Password must be at least 6 characters";
-                return;
             }
-            userService.createUser(user.username, user.password, user.email).then(function (response) {
-                    $scope.success = response.data.message === "User created";
+            userService.createUser(user.username, user.email)
+                .success(function (response) {
+                    $scope.success = response.message === "User created";
                     $scope.error = !$scope.success;
                     if ($scope.error) {
                         $scope.message = "Username or email already in use";
                     }
-                }
-            )
-            ;
+                })
+                .error(function (response) {
+                    $scope.success = false;
+                    $scope.error = true;
+                    $scope.message = "Something went wrong with your request"
+                });
         };
 
         $scope.setSuccessFalse = function () {
@@ -44,7 +44,7 @@ angular.module('maginationApp').controller('mainController', function ($scope, u
         var validateEmail = function (email) {
             var atpos = email.indexOf("@");
             var dotpos = email.lastIndexOf(".");
-            return (atpos >= 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length);
+            return (atpos >= 1 && dotpos >= atpos + 1 && dotpos <= email.length);
         }
     }
 )

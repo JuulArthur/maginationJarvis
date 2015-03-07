@@ -4,7 +4,6 @@ module.exports = function (router, models) {
         .post(function (req, res) {
             new models.User({
                 'username': req.body.username,
-                'password': req.body.password,
                 'email': req.body.email
             }).save(function (err) {
                     if (err) return res.send(err);

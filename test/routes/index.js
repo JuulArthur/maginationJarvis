@@ -1,13 +1,9 @@
 "use strict";
-var mongoose = require('mongoose');
-var mockgoose = require('mockgoose');
 var request = require('supertest');
 var chai = require('chai');
 var should = chai.should();
-var assert = chai.assert;
 module.exports = (function (models, app) {
     describe("Auth", (function () {
-        var url = "http://localhost:3000";
         var testUser = {
             username: "test",
             password: "test121312313"
