@@ -20,7 +20,7 @@ var srcDir = [
 
 gulp.task('server', function () {
     server.run({
-        file: 'app.js'
+        file: 'server.js'
     });
 });
 

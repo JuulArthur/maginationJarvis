@@ -33,6 +33,8 @@
     "supertest": "^0.14.0"
   },
   "devDependencies": {
+    "bluebird": "^2.9.14",
+    "consolidate": "^0.11.0",
     "gulp-jscs": "^1.4.0",
     "gulp-mocha": "^1.1.0",
     "mockgoose": "^1.10.7"

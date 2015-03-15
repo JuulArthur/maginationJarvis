@@ -1,13 +1,12 @@
 "use strict";
-module.exports = (function (app, express, models) {
+var express = require('express');
+var userRoutes = require('./user');
 
-    var router = express.Router();
+var router = express.Router();
 
-    app.use('/api', router);
-
-    router.get('/', (function (res, req) {
-        req.send('api');
-    }));
-
-    require('./user')(router,models);
+router.use('/user', userRoutes);
+router.get('/', function(req, res, next) {
+    res.send('api');
 });
+
+module.exports = router;
