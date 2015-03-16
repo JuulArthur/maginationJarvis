@@ -20,6 +20,7 @@ angular.module('maginationApp').controller('mainController', function ($scope, u
             }
             userService.createUser(user.username, user.email)
                 .success(function (response) {
+                    $scope.success = response.message === "user created!";
                     $scope.error = !$scope.success;
                     if ($scope.error) {
                         $scope.message = "Username or email already in use";

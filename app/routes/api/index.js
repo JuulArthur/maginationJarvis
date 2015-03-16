@@ -9,4 +9,8 @@ router.get('/', function(req, res, next) {
     res.send('api');
 });
 
+router.use(function(err, req, res, next) {
+    return res.json({'message': 'user already exists!'});
+});
+
 module.exports = router;
