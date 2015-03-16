@@ -163,8 +163,8 @@ $(function() {
 	
 	  function fullscreenImgHeight(){
 
-		  $('#home, .background-video').css({height:window_height});
-/*		  var headerH = $('nav').outerHeight();
+          $('#home, .background-video').css({height:window_height}).css('height', '-=100px');
+		  /*var headerH = $('nav').outerHeight();
           $("#home").css('marginBottom',-headerH);*/
 		  
 	  }

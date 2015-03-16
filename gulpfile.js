@@ -2,21 +2,20 @@ var gulp        = require('gulp');
 var server      = require('gulp-express');
 var runSequence = require('run-sequence');
 var mocha       = require('gulp-mocha');
-var jscs = require('gulp-jscs');
-
+var jscs        = require('gulp-jscs');
+var uglify = require('gulp-uglify');
 
 var srcDir = [
-    'src/config/**/*.js',
-    'src/models/**/*.js',
-    'src/public/js/**/*.js',
-    'src/routes/**/*.js',
-    'src/test/**/*.js',
-    'src/modules/**/*.js',
-    'src/*.js',
-    'src/**/*.html',
-    'src/**/*.css',
-    'src/public/libs/**/*.js'
+    '**/*.js',
+    '**/*.html',
+    '**/*.css',
 ];
+
+gulp.task('compress', function() {
+    gulp.src('public/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('public/js/app.min.js'))
+});
 
 gulp.task('server', function () {
     server.run({

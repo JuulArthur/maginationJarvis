@@ -127,7 +127,7 @@ h1 {
 }
 
 #home {
-	height: auto !important;
+    height: 80% !important;
 	padding: 60px 0;
 }
 
