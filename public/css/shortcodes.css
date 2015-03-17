@@ -512,6 +512,7 @@ blockquote p {
 	width: 33.33%;
 	text-align: center;
 	margin-left:-4px;
+	cursor: default;
 }
 .team-member.team-one {
 	width: 80%;	
@@ -688,7 +689,7 @@ opacity: .95;
 .overlay-content {
 	opacity: 0;
 	filter: alpha(opacity=0);
-	top: 30%;
+	top: 50%;
 }
 .team-overlay {
 	position: absolute;
@@ -703,7 +704,7 @@ opacity: .95;
 .overlay-content {
 	text-align: center;
 	position: absolute;
-	top: 20%;
+	top: 50%;
 	width: 100%;
 	z-index: 10;
 	color:inherit;

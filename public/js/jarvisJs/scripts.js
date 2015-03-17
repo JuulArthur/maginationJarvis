@@ -736,7 +736,7 @@ $(document).ready(function()
         var content = $(this).find('.overlay-content');
 
         overlay.stop(true,true).fadeIn(600);
-        content.stop().animate({'top': "40%",
+        content.stop().animate({'top': "80%",
 			                     opacity:1 }, 600);
         
     }).on('mouseleave', function()
@@ -744,7 +744,7 @@ $(document).ready(function()
         var overlay = $(this).find('.team-overlay');
         var content = $(this).find('.overlay-content');
         
-        content.stop().animate({'top': "60%",
+        content.stop().animate({'top': "100%",
 			                     opacity:0  }, 300, function(){
 			content.css('top',"20%")});
 			
