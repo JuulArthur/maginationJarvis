@@ -3,7 +3,8 @@ var server      = require('gulp-express');
 var runSequence = require('run-sequence');
 var mocha       = require('gulp-mocha');
 var jscs        = require('gulp-jscs');
-var uglify = require('gulp-uglify');
+var uglify      = require('gulp-uglify');
+var concat      = require('gulp-concat');
 
 var srcDir = [
     '**/*.js',
@@ -12,9 +13,9 @@ var srcDir = [
 ];
 
 gulp.task('compress', function() {
-    gulp.src('public/**/*.js')
+    gulp.src('public/js/all.js')
         .pipe(uglify())
-        .pipe(gulp.dest('public/js/app.min.js'))
+        .pipe(gulp.dest('public/js/all.min.js'))
 });
 
 gulp.task('server', function () {
@@ -33,6 +34,12 @@ gulp.task('test', function () {
         .pipe(mocha({
             reporter: 'spec'
         }));
+});
+
+gulp.task('concat', function() {
+    gulp.src('**/*.js')
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('./public/js'))
 });
 
 gulp.task('jscs', function () {
