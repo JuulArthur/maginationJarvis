@@ -13,7 +13,7 @@ var srcDir = [
 ];
 
 gulp.task('compress', function() {
-    gulp.src('public/js/all.js')
+    gulp.src('public/js/app.js')
         .pipe(uglify())
         .pipe(gulp.dest('public/js/all.min.js'))
 });

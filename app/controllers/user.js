@@ -7,7 +7,7 @@ exports.create = function(req, res, next) {
         'email': req.body.email
     })
     .then(function(user) {
-        return res.json({'message': 'user created!'});
+        return res.json({'message': 'username reserved!'});
     })
     .catch(next);
 };

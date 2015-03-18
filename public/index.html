@@ -4,6 +4,7 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en">  <!--<![endif]-->
 <head>
+    <base href="/"> <!-- needed for angular html5 mode -->
     <link rel="shortcut icon" href="images/magico2.ico" type="image/x-icon">
     <link rel="icon" href="images/magico2.ico" type="image/x-icon">
 
@@ -81,23 +82,15 @@
                </div>
 
                <form class="userform" id="newsletterform">
-                   <div class="eight columns"><input type="text" class="input-field" placeholder="Desired username" ng-model="user.username" required/></div>
-                   <div class="eight columns"><input type="email" name="email" class="input-field" placeholder="Enter your email" ng-model="user.email" required/></div>
+                   <div class="eight columns" ng-show="creatingUser"><input type="text" class="input-field" placeholder="Desired username" ng-model="user.username" required/></div>
+                   <div class="eight columns" ng-show="creatingUser"><input type="email" name="email" class="input-field" placeholder="Enter your email" ng-model="user.email" required/></div>
                    <!--<input type="password" class="input-field" placeholder="Enter your password" ng-model="user.password" required/>-->
-                   <div class="sixteen columns"><a id="button-newsletter" class="button" href="" title="Subscribe now" ng-click="submit(user)">Subscribe now</a></div>
-                    <div style="padding-top:10px">
-                     <div class="sixteen columns alert-message success" ng-show="success">User created<span class="close" href="#" ng-click="setSuccessFalse(user)">x</span></div>
-                     <div class="sixteen columns alert-message error" ng-show="error">{{message}}<span class="close" href="#" ng-click="setErrorFalse(user)">x</span></div>
-                    </div>
+                   <div class="sixteen columns" ng-show="creatingUser"><a id="button-newsletter" class="button" href="" title="Subscribe now" ng-click="submit(user)">Subscribe now</a></div>
+                   <div style="padding-top:10px">
+                       <div class="sixteen columns alert-message error" ng-show="error">{{message}}<span class="close" href="#" ng-click="setErrorFalse(user)">x</span></div>
+                       <div class="sixteen columns alert-message success" ng-show="success">Username reserved!<span class="close" href="#" ng-click="setSuccessFalse(user)">x</span></div>
+                   </div>
                </form>
-  
-              <!--<form method="post" action="subscribe.php" id="newsletterform" data-mailchimp="true">
-                <div>
-                  <input type="text" class="input-field" id="newsletter-name" name="newsletter-name" value="Enter your name">
-                  <input type="text" class="input-field" id="newsletter-email" name="newsletter-email" value="Enter your email">
-                  <a id="button-newsletter" class="button" href="#" title="Subscribe now">Subscribe now</a>            
-                </div>
-              </form> -->
            </div><!-- END CONTAINER -->
         </div><!-- END HOME TEXT WRAPPER -->
      </div><!-- END HOME SECTION -->
