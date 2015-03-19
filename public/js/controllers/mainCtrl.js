@@ -1,10 +1,18 @@
 "use strict";
-angular.module('maginationApp').controller('mainController', function ($scope, userService) {
+angular.module('maginationApp').controller('mainController', function ($scope, userService, $timeout) {
         $scope.success = false;
         $scope.error = false;
+        $scope.creatingUser = true;
         $scope.message = "default";
 
+        var removeAlerts = function() {
+            $scope.success = false;
+            $scope.error = false;
+            console.log("timeout");
+        };
+
         $scope.submit = function (user) {
+            $timeout(removeAlerts, 7000);
             if (user === undefined) {
                 $scope.error = true;
                 $scope.message = "Username must be at least 5 characters";
@@ -20,10 +28,13 @@ angular.module('maginationApp').controller('mainController', function ($scope, u
             }
             userService.createUser(user.username, user.email)
                 .success(function (response) {
-                    $scope.success = response.message === "user created!";
+                    $scope.success = response.message === "username reserved!";
                     $scope.error = !$scope.success;
                     if ($scope.error) {
                         $scope.message = "Username or email already in use";
+                    } else {
+                        $scope.creatingUser = false;
+                        console.log($scope.creatingUser);
                     }
                 })
                 .error(function (response) {
