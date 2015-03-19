@@ -15,6 +15,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', router);
 
-app.listen(3000,function () {
+app.listen(3000, function() {
     console.log('Running on port:3000');
 });

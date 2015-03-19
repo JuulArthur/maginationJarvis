@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 var express = require('express');
 var apiRoutes = require('./api');
 var path = require('path');

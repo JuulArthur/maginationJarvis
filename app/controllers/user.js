@@ -3,11 +3,11 @@ var User = require('../models/user');
 
 exports.create = function(req, res, next) {
     return User.createAsync({
-        'username': req.body.username,
-        'email': req.body.email
+        username: req.body.username,
+        email: req.body.email
     })
     .then(function(user) {
-        return res.json({'message': 'username reserved!'});
+        return res.json({message: 'username reserved!'});
     })
     .catch(next);
 };

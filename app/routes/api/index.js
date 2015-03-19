@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 var express = require('express');
 var userRoutes = require('./user');
 
@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.use(function(err, req, res, next) {
-    return res.json({'message': 'user already exists!'});
+    return res.json({message: 'user already exists!'});
 });
 
 module.exports = router;

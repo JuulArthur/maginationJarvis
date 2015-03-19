@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 var Bluebird = require('bluebird');
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
@@ -8,14 +8,13 @@ var userSchema = mongoose.Schema({
     username: {
         type: String,
         required: true,
-        index: true,
-        unique: true
+        index: {unique: true}
     },
-    'email': {
+    email: {
         type: String,
         required: true,
-        index: { unique: true },
-        validate: /\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}\b/ }
+        index: {unique: true},
+        validate: /\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,10}\b/ }
 });
 
     /*schema.pre('save', function (next) {

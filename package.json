@@ -2,7 +2,7 @@
   "name": "magination",
   "version": "1.0.0",
   "description": "Magination website",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "gulp test"
   },
@@ -38,6 +38,7 @@
     "gulp-concat": "^2.5.2",
     "gulp-jscs": "^1.4.0",
     "gulp-mocha": "^1.1.0",
+    "gulp-uglifyjs": "^0.6.1",
     "mockgoose": "^1.10.7"
   }
 }

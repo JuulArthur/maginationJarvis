@@ -1,7 +1,7 @@
-"use strict";
-angular.module('maginationApp').controller('loginController', function ($scope, $http) {
+'use strict';
+angular.module('maginationApp').controller('loginController', ['$scope', '$http', function($scope, $http) {
 
-    $scope.login = (function () {
+    $scope.login = (function() {
         $http({
             method: 'POST',
             data: {
@@ -9,10 +9,10 @@ angular.module('maginationApp').controller('loginController', function ($scope, 
                 password: $scope.password
             },
             url: '/auth/login'
-        }).success((function (data, status, headers, config) {
+        }).success((function(data, status, headers, config) {
             $scope.tagline = data;
-        })).error((function (data, status, headers, config) {
-            $scope.tagline = "nope";
+        })).error((function(data, status, headers, config) {
+            $scope.tagline = 'nope';
         }));
     });
-});
+}]);

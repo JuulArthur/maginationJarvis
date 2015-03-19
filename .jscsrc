@@ -1,0 +1,9 @@
+{
+    "preset": "airbnb",
+    "excludeFiles": ["node_modules/**", "modules/**", "public/libs/**", "public/js/*.min.*", ".git/**", "public/js/jarvisJs/**"],
+    "validateIndentation": 4,
+    "disallowMultipleVarDecl": true,
+    "requireMultipleVarDecl": null,                            
+    "safeContextKeyword": ["that"]
+}
+
