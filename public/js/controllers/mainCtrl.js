@@ -4,6 +4,7 @@ angular.module('maginationApp').controller('mainController', ['$scope', 'userSer
         $scope.error = false;
         $scope.creatingUser = true;
         $scope.message = 'default';
+        $scope.timoutPromise = null;
 
         var removeAlerts = function() {
             $scope.success = false;
@@ -11,7 +12,10 @@ angular.module('maginationApp').controller('mainController', ['$scope', 'userSer
         };
 
         $scope.submit = function(user) {
-            $timeout(removeAlerts, 7000);
+            if ($scope.timoutPromise) {
+                $timeout.cancel($scope.timoutPromise);
+            }
+            $scope.timoutPromise = $timeout(removeAlerts, 7000);
             if (user === undefined) {
                 $scope.error = true;
                 $scope.message = 'Username must be at least 5 characters';
@@ -33,7 +37,6 @@ angular.module('maginationApp').controller('mainController', ['$scope', 'userSer
                         $scope.message = 'Username or email already in use';
                     } else {
                         $scope.creatingUser = false;
-                        console.log($scope.creatingUser);
                     }
                 })
                 .error(function(response) {
