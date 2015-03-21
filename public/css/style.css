@@ -1959,4 +1959,10 @@ a#button-newsletter {
 .facebook-icon
 {
 	background: url(../images/parallax/icon-facebook.png);
-} 
+}
+
+@media only screen and (device-width: 768px) {
+    #portfolio-wrap {
+        width: 90%;
+    }
+}
