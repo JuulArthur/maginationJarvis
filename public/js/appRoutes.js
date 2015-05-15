@@ -7,6 +7,9 @@ angular.module('maginationApp').config(['$routeProvider', '$locationProvider', (
     }).when('/login', {
         templateUrl: 'views/login.html',
         controller: 'loginController'
+    }).when('/forum', {
+        templateUrl: 'views/forum.html',
+        controller: 'forumController'
     }).otherwise({
         templateUrl: 'views/home.html',
         controller: 'mainController'

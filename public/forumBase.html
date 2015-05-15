@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en">  <!--<![endif]-->
+<head>
+    <!--<base href="/"> needed for angular html5 mode -->
+    <link rel="shortcut icon" href="images/magico2.ico" type="image/x-icon">
+    <link rel="icon" href="images/magico2.ico" type="image/x-icon">
+
+    <!-- META DATA -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="UTF-8">
+    <title>Magination</title>
+    <meta name="description" content="A magnetic game where you are in charge!"/>
+    <meta name="keywords" content="Magnets, Game, Imagination, Magination, Creative, Creativity, Children"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- GOOGLE WEB FONTS INCLUDE -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/forumController.js"></script>
+    <script src="js/appRoutes.js"></script>
+    <!-- <script src="js/app.min.js"></script> -->
+
+
+
+
+</head>
+
+<body ng-app="maginationApp" ng-controller="forumController">
+<ng-view></ng-view>
+</body>
+
+</html>
