@@ -1964,7 +1964,9 @@ a#button-newsletter {
 {
 	margin: 40px auto;
 	text-align: center;
+	background-color: #87c543;
     background-color: #5cb85c;
+    background-color: #2BDE73;
     border-radius: 6px;
     padding: 10px 0;
     width: 97.9%
@@ -2008,6 +2010,14 @@ a#button-newsletter {
     text-align: center;
     background-color: #90EE90;
     border-radius: 10px;
+}
+
+.kickstarter-img
+{
+    height: 110px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    overflow: hidden;
 }
 
 @media only screen and (device-width: 768px) {
