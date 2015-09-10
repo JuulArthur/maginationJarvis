@@ -1960,6 +1960,56 @@ a#button-newsletter {
 	background: url(../images/parallax/icon-facebook.png);
 }
 
+.container-kickstarter
+{
+	margin: 40px auto;
+	text-align: center;
+    background-color: #5cb85c;
+    border-radius: 6px;
+    padding: 10px 0;
+    width: 97.9%
+}
+
+.btn-kickstarter
+{
+    position: relative;
+    color: white;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-kickstarter2
+{
+    color: #000055;
+    font-size: 16px;
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    margin: 20px auto 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-kickstarter3
+{
+    color: #292727;
+    font-size: 16px;
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    margin: 20px auto 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #90EE90;
+    border-radius: 10px;
+}
+
 @media only screen and (device-width: 768px) {
     #portfolio-wrap {
         width: 90%;
