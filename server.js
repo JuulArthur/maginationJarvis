@@ -6,7 +6,7 @@ var router          = require('./app/routes');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect('mongodb://localhost:27017/frontpage');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
